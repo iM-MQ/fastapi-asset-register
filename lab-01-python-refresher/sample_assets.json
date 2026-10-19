@@ -1,0 +1,37 @@
+[
+  {
+    "tag": "AST-0001",
+    "name": "Dell Latitude 7450",
+    "category": "laptop",
+    "status": "in_use",
+    "assigned_to": "Finance team"
+  },
+  {
+    "tag": "AST-0002",
+    "name": "Dell Latitude 7450",
+    "category": "laptop",
+    "status": "in_stock",
+    "assigned_to": null
+  },
+  {
+    "tag": "AST-0003",
+    "name": "HP LaserJet Pro",
+    "category": "printer",
+    "status": "repair",
+    "assigned_to": null
+  },
+  {
+    "tag": "AST-0004",
+    "name": "Cisco Catalyst 9200",
+    "category": "switch",
+    "status": "in_use",
+    "assigned_to": "Server room"
+  },
+  {
+    "tag": "AST-0005",
+    "name": "Lenovo ThinkPad T14",
+    "category": "laptop",
+    "status": "retired",
+    "assigned_to": null
+  }
+]
