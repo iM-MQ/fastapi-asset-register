@@ -14,7 +14,7 @@ I already know what the Asset Register does, so each lab focuses on *how* to bui
 | [02](lab-02-fastapi) | First FastAPI app: the original app's fields rebuilt as a REST API, with Pydantic validation, proper status codes, interactive docs and 19 tests | Complete ✅ |
 | [03](lab-03-postgres) | A real database: PostgreSQL 18 in Docker Compose through SQLAlchemy, with a separate test database, data that survives restarts, and a connection-pool fix found by testing a database restart | Complete ✅ |
 | [04](lab-04-ci) | Tests in CI: GitHub Actions runs all three labs on every push and pull request, with a PostgreSQL service container, and a ruleset blocks merging into `main` unless every check passes | Complete ✅ |
-| 05 | Ship it: a container image published to GitHub, ready to deploy to Azure | Planned ⏳ |
+| [05](lab-05-container) | Ship it: a container image, tested and published to GitHub Container Registry by CI | Complete ✅ |
 
 ## Where this fits
 
