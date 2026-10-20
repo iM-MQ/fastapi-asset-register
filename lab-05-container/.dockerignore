@@ -1,0 +1,14 @@
+# Only the app's code and requirements go into the image
+.env
+.env.*
+!.env.example
+__pycache__/
+.pytest_cache/
+*.pyc
+images/
+initdb/
+README.md
+conftest.py
+test_*.py
+requirements-dev.txt
+compose.yaml
