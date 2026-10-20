@@ -7,7 +7,7 @@ from dataclasses import asdict, dataclass
 from enum import StrEnum
 from pathlib import Path
 
-TAG_PATTERN = re.compile(r"AST-\d{4}")
+TAG_PATTERN = re.compile(r"AST-\d+")
 
 
 class Status(StrEnum):
