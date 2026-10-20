@@ -10,7 +10,7 @@ I already know what the Asset Register does, so each lab focuses on *how* to bui
 |---|---|---|
 | [01](lab-01-python-refresher) | Python refresher: virtual environments, type hints, dataclasses, enums, JSON files, and first tests with pytest | Complete ✅ |
 | [02](lab-02-fastapi) | First FastAPI app: the original app's fields rebuilt as a REST API, with Pydantic validation, proper status codes, interactive docs and 19 tests | Complete ✅ |
-| 03 | A real database: PostgreSQL through SQLAlchemy, run with Docker Compose | Planned ⏳ |
+| [03](lab-03-postgres) | A real database: PostgreSQL 18 in Docker Compose through SQLAlchemy, with a separate test database, data that survives restarts, and a connection-pool fix found by testing a database restart | Complete ✅ |
 | 04 | Tests in CI: pytest with FastAPI's test client, run by GitHub Actions on every push | Planned ⏳ |
 | 05 | Ship it: a container image published to GitHub, ready to deploy to Azure | Planned ⏳ |
 

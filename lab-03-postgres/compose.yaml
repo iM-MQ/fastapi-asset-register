@@ -1,0 +1,27 @@
+# PostgreSQL for the Asset Register. The FastAPI app runs on the host for now
+name: asset-register-lab03
+
+services:
+  db:
+    image: postgres:18-alpine
+    environment:
+      # Read from the .env file next to this one, which Git ignores
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      # Only reachable from this computer, not from the network
+      - "127.0.0.1:5432:5432"
+    volumes:
+      # From PostgreSQL 18, the data volume is mounted at /var/lib/postgresql
+      - pgdata:/var/lib/postgresql
+      # Scripts in this folder run once, the first time the database is created
+      - ./initdb:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  pgdata:
