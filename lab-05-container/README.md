@@ -133,9 +133,10 @@ CMD ["fastapi", "run", "main.py", "--port", "8000"]
 
 ### `.dockerignore`
 
-Keeps files out of the **build context**, the folder Docker sends to the builder. The most important line is the first: my real `.env` can never be copied into an image by mistake.
+Keeps files out of the **build context**, the folder Docker sends to the builder. The most important line is `.env`: my real `.env` can never be copied into an image by mistake.
 
 ```
+# Only the app's code and requirements go into the image
 .env
 .env.*
 !.env.example
