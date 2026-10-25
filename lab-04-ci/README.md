@@ -26,7 +26,7 @@ git push or pull request ──► GitHub Actions: "Tests"
                               └── job: lab-03-postgres         ──► 20 tests
                                      └── service: postgres:18-alpine (deleted when the job ends)
 
-Ruleset "Protect main": all three jobs must pass before a pull request can merge
+Ruleset "Protect main": all three jobs must pass before a pull request can merge (Lab 05 adds two more)
 ```
 
 This lab adds no application code. It is one workflow file at the root of the repository, plus a repository setting.
@@ -43,6 +43,9 @@ This lab adds no application code. It is one workflow file at the root of the re
 ---
 
 ## The workflow, `.github/workflows/tests.yml`
+
+> [!NOTE]
+> This is the workflow as it was at the end of this lab. In [Lab 05](../lab-05-container/README.md#part-2-ci-builds-tests-and-publishes-the-image) I added Lab 05 to the test matrix, plus a new `image` job that builds, smoke-tests and publishes the container image, and made both new checks required. The [current workflow file](../.github/workflows/tests.yml) has the latest version.
 
 ```yaml
 # Runs every lab's tests on GitHub's servers, on every push and pull request
