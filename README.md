@@ -33,7 +33,7 @@ I already know what the Asset Register does, so each lab focuses on *how* to bui
 |---|---|---|---|
 | Python | 3.14 (3.12 or later required) | Runs the code and tests | [python.org/downloads](https://www.python.org/downloads/) |
 | Git | 2.x | Clones this repository | `winget install --id Git.Git -e` |
-| Docker Desktop | Latest | Runs PostgreSQL from Lab 03 | `winget install --id Docker.DockerDesktop -e` |
+| Docker Desktop | Latest | Runs PostgreSQL from Lab 03, and builds and runs the container in Lab 05 | `winget install --id Docker.DockerDesktop -e` |
 | VS Code + Python extension | Latest (optional) | Editing, with type checking and test discovery | `winget install --id Microsoft.VisualStudioCode -e` |
 
 ## First-time setup
@@ -60,7 +60,7 @@ Activate it. If PowerShell says running scripts is disabled, run `Set-ExecutionP
 .\.venv\Scripts\Activate.ps1
 ```
 
-Each lab has its own `requirements.txt`. For example, for Lab 01:
+Each lab has its own `requirements.txt`. Lab 05 also has a `requirements-dev.txt`, which adds the test tools that are kept out of its container image. For example, for Lab 01:
 
 ```powershell
 python -m pip install -r lab-01-python-refresher\requirements.txt
