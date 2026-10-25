@@ -24,6 +24,7 @@ I already know what the Asset Register does, so each lab focuses on *how* to bui
 | [terraform-azure-labs](https://github.com/iM-MQ/terraform-azure-labs) | Azure infrastructure as code with Terraform |
 | [kubernetes-labs](https://github.com/iM-MQ/kubernetes-labs) | The Asset Register on Kubernetes, locally and on AKS |
 | [azure-landing-zone](https://github.com/iM-MQ/azure-landing-zone) | The governed Azure platform that applications like this run in |
+| [network-automation-labs](https://github.com/iM-MQ/network-automation-labs) | Routing fundamentals built and tested as code, applying this repository's testing and CI approach to a network |
 | **fastapi-asset-register** | The application itself, rebuilt as a tested REST API |
 
 ## Prerequisites
